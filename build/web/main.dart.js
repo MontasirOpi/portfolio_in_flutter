@@ -70456,7 +70456,7 @@ V7(a){var s=null,r=t.D
 return A.c7(s,A.fr(A.b([A.f9(A.b([A.hJ(s,s,B.kO,s,s,new A.acs(this),s,s,s),A.hJ(s,s,B.kQ,s,s,new A.act(this),s,s,s),A.hJ(s,s,B.kP,s,s,new A.acu(this),s,s,s)],r),B.L,B.cp,B.R),B.dK,A.cB("Designed & Built by Fahim Montasir Opi",s,s,A.a1(a).p1.z,s),B.w8,A.cB("\xa9 "+A.aog(new A.ev(Date.now(),0,!1))+" All Rights Reserved",s,s,A.a1(a).p1.Q,s)],r),B.L,B.P,B.R),B.p,s,s,s,s,s,s,B.d8,s,s,1/0)},
 t3(){var s=0,r=A.Q(t.H),q=1,p=[],o,n,m,l
 var $async$t3=A.M(function(a,b){if(a===1){p.push(b)
-s=q}while(true)switch(s){case 0:m=A.Ri(null,"fahimmontasiropi@gmail.com",A.aO(["subject","Hello from Portfolio Website"],t.N,t.z),"mailto")
+s=q}while(true)switch(s){case 0:m=A.Ri(null,"montasiropi@gmail.com",A.aO(["subject","Hello from Portfolio Website"],t.N,t.z),"mailto")
 q=3
 s=6
 return A.S(A.CG(m,B.eC),$async$t3)

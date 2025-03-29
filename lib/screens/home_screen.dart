@@ -1104,7 +1104,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Future<void> _launchEmail() async {
     final Uri emailUri = Uri(
       scheme: 'mailto',
-      path: 'fahimmontasiropi@gmail.com',
+      path: 'montasiropi@gmail.com',
       queryParameters: {
         'subject': 'Hello from Portfolio Website',
       },
