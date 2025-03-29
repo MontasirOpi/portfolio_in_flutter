@@ -135,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
               child: Center(
                 child: Text(
-                  'Montasir Opi',
+                  'Fahim Montasir Opi',
                   style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         color: AppTheme.secondaryColor,
                         fontWeight: FontWeight.bold,
@@ -293,7 +293,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   curve: const Interval(0.2, 0.7, curve: Curves.easeOut),
                 )),
                 child: Text(
-                  'Montasir Opi.',
+                  'Fahim Montasir Opi.',
                   style: Theme.of(context).textTheme.displayMedium?.copyWith(
                         color: AppTheme.textColor,
                         fontWeight: FontWeight.bold,
@@ -1088,7 +1088,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           ),
           const SizedBox(height: 20),
           Text(
-            'Designed & Built by Montasir Opi',
+            'Designed & Built by Fahim Montasir Opi',
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           const SizedBox(height: 10),

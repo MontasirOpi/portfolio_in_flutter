@@ -1,6 +1,6 @@
-# Montasir Opi's Portfolio
+# Fahim Montasir Opi's Portfolio
 
-This is a Flutter web portfolio application showcasing Montasir Opi's skills, projects, and contact information.
+This is a Flutter web portfolio application showcasing Fahim Montasir Opi's skills, projects, and contact information.
 
 ## Hosting on Vercel
 

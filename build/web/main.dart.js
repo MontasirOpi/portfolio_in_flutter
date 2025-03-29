@@ -70368,7 +70368,7 @@ m=A.bg(B.hT,i.geL(),h)
 j=A.bg(B.l5,i.geL(),h)
 return new A.xV(new A.ue(new A.GR(h),0,B.w,16,new A.OJ(h,h,1/0,56),0,h),A.aoO(A.fr(A.b([f,A.c7(h,A.fr(A.b([p,B.c4,A.aoz(a,A.f9(A.b([k,B.Kx,A.WS(A.eT(A.e4(i.Fg(a),new A.aA(j,new A.ap(B.GU,B.f,q),o),h,!0),h,m),3)],l),B.L,B.P,B.R),n)],l),B.aC,B.P,B.R),B.p,h,h,new A.bW(d,h,h,c,e,h,B.T),h,h,B.hA,B.kI,h,h,1/0),i.Vg(a),i.V3(a),i.V7(a)],l),B.L,B.P,B.R),i.d,B.z8),g,B.w,h)},
 V5(a){var s=this,r=null,q=A.a1(a).p1.e,p=t.D
-return new A.F_(B.w,A.a5h(!0,A.anC(A.b([new A.F3(B.xw,A.jl(A.cB("Montasir Opi",r,r,q==null?r:q.mS(B.l,B.U),r),r,r),r),s.rK(a,"Home",0,B.BR),s.rK(a,"About",1,B.l_),s.rK(a,"Projects",2,B.BU),s.rK(a,"Contact",3,B.BP),B.kw,new A.dv(B.B0,A.aiz(B.C6,B.wr,new A.aco(s,a),A.pK(r,r,B.l,r,r,r,r,r,r,B.j,r,r,B.AU,r,r,r,r,B.wp,r)),r),B.kw,new A.dv(B.hz,A.f9(A.b([A.hJ(r,r,B.kO,r,r,new A.acp(s),r,r,r),A.hJ(r,r,B.kQ,r,r,new A.acq(s),r,r,r),A.hJ(r,r,B.kP,r,r,new A.acr(s),r,r,r)],p),B.L,B.qf,B.R),r)],p),B.aw,B.a9),B.aw,!0),r)},
+return new A.F_(B.w,A.a5h(!0,A.anC(A.b([new A.F3(B.xw,A.jl(A.cB("Fahim Montasir Opi",r,r,q==null?r:q.mS(B.l,B.U),r),r,r),r),s.rK(a,"Home",0,B.BR),s.rK(a,"About",1,B.l_),s.rK(a,"Projects",2,B.BU),s.rK(a,"Contact",3,B.BP),B.kw,new A.dv(B.B0,A.aiz(B.C6,B.wr,new A.aco(s,a),A.pK(r,r,B.l,r,r,r,r,r,r,B.j,r,r,B.AU,r,r,r,r,B.wp,r)),r),B.kw,new A.dv(B.hz,A.f9(A.b([A.hJ(r,r,B.kO,r,r,new A.acp(s),r,r,r),A.hJ(r,r,B.kQ,r,r,new A.acq(s),r,r,r),A.hJ(r,r,B.kP,r,r,new A.acr(s),r,r,r)],p),B.L,B.qf,B.R),r)],p),B.aw,B.a9),B.aw,!0),r)},
 rK(a,b,c,d){var s=null
 return new A.Gk(A.nb(d,B.l,s,s),A.cB(b,s,s,B.MS,s),new A.acn(this,c),s)},
 IV(a){var s,r,q,p,o,n=this,m=null,l=n.c
@@ -70404,7 +70404,7 @@ n=A.a1(a).p1.b
 if(n==null)n=g
 else{m=A.b6(a,g,f).w.a.a<650?40:60
 m=n.a5c(B.a3,m,B.U,A.b([new A.hT(A.a9(102,B.l.n()>>>16&255,B.l.n()>>>8&255,B.l.n()&255),B.GV,10)],t.kO))
-n=m}o=A.e4(A.cB("Montasir Opi.",g,g,n,g),new A.aA(o,new A.ap(B.ip,B.f,r),p),g,!0)
+n=m}o=A.e4(A.cB("Fahim Montasir Opi.",g,g,n,g),new A.aA(o,new A.ap(B.ip,B.f,r),p),g,!0)
 n=A.bg(B.Ct,h.gkA(),g)
 m=A.a1(a).p1.c
 if(m==null)m=g
@@ -70453,7 +70453,7 @@ h=A.bg(B.hT,q.ghY(),p)
 g=A.bg(B.CE,q.ghY(),p)
 return A.c7(p,A.fr(A.b([l,B.c4,j,B.wa,A.eT(A.e4(A.Wk(!1,B.Iw,p,p,p,p,p,p,new A.acm(q),p,A.pK(p,p,B.l,p,p,p,8,p,p,B.j,p,p,B.hB,A.a9(B.c.af(127.5),B.l.n()>>>16&255,B.l.n()>>>8&255,B.l.n()&255),new A.c2(A.cx(30),B.o),p,p,B.Os,p)),new A.aA(g,new A.ap(B.du,B.f,k),i),p,!0),p,h)],t.D),B.L,B.cp,B.R),B.p,p,p,new A.bW(p,p,p,n,m,new A.l1(B.ju,B.jt,B.bj,o,p,p),B.T),p,p,B.hA,B.kI,p,p,1/0)},
 V7(a){var s=null,r=t.D
-return A.c7(s,A.fr(A.b([A.f9(A.b([A.hJ(s,s,B.kO,s,s,new A.acs(this),s,s,s),A.hJ(s,s,B.kQ,s,s,new A.act(this),s,s,s),A.hJ(s,s,B.kP,s,s,new A.acu(this),s,s,s)],r),B.L,B.cp,B.R),B.dK,A.cB("Designed & Built by Montasir Opi",s,s,A.a1(a).p1.z,s),B.w8,A.cB("\xa9 "+A.aog(new A.ev(Date.now(),0,!1))+" All Rights Reserved",s,s,A.a1(a).p1.Q,s)],r),B.L,B.P,B.R),B.p,s,s,s,s,s,s,B.d8,s,s,1/0)},
+return A.c7(s,A.fr(A.b([A.f9(A.b([A.hJ(s,s,B.kO,s,s,new A.acs(this),s,s,s),A.hJ(s,s,B.kQ,s,s,new A.act(this),s,s,s),A.hJ(s,s,B.kP,s,s,new A.acu(this),s,s,s)],r),B.L,B.cp,B.R),B.dK,A.cB("Designed & Built by Fahim Montasir Opi",s,s,A.a1(a).p1.z,s),B.w8,A.cB("\xa9 "+A.aog(new A.ev(Date.now(),0,!1))+" All Rights Reserved",s,s,A.a1(a).p1.Q,s)],r),B.L,B.P,B.R),B.p,s,s,s,s,s,s,B.d8,s,s,1/0)},
 t3(){var s=0,r=A.Q(t.H),q=1,p=[],o,n,m,l
 var $async$t3=A.M(function(a,b){if(a===1){p.push(b)
 s=q}while(true)switch(s){case 0:m=A.Ri(null,"fahimmontasiropi@gmail.com",A.aO(["subject","Hello from Portfolio Website"],t.N,t.z),"mailto")
@@ -70625,7 +70625,7 @@ s.aY$=null
 s.aJ()}}
 A.GR.prototype={
 K(a){var s=this,r=null,q=A.b6(a,r,t.w).w.a.a<650,p=A.c7(r,B.z2,B.p,r,r,B.jC,r,30,r,r,r,r,30),o=t.D
-p=A.b([A.f9(A.b([new A.rq(new A.ap(0,1,t.H7),new A.a2B(),B.Bl,B.fY,B.ej,r,r,t.HN),B.fm,p,B.fm,A.cB("Montasir Opi",r,r,A.fH(r,r,B.l,r,r,r,r,r,r,r,r,q?18:22,r,r,B.U,r,r,!0,r,r,r,r,r,r,r,r),r)],o),B.L,B.P,B.R)],o)
+p=A.b([A.f9(A.b([new A.rq(new A.ap(0,1,t.H7),new A.a2B(),B.Bl,B.fY,B.ej,r,r,t.HN),B.fm,p,B.fm,A.cB("Fahim Montasir Opi",r,r,A.fH(r,r,B.l,r,r,r,r,r,r,r,r,q?18:22,r,r,B.U,r,r,!0,r,r,r,r,r,r,r,r),r)],o),B.L,B.P,B.R)],o)
 if(q)p.push(new A.er(new A.a2C(),r))
 else p.push(A.f9(A.b([s.Vh(),s.Fj("Flutter",B.Bk,"https://flutter.dev"),s.Fj("Dart",A.c7(r,B.yZ,B.p,r,r,B.jC,r,22,r,r,r,r,22),"https://dart.dev"),s.wX(B.hP,"https://github.com/MontasirOpi"),s.wX(B.kX,u.B),s.wX(B.kY,"https://twitter.com")],o),B.L,B.P,B.R))
 return A.c7(r,A.f9(p,B.L,B.eM,B.R),B.p,r,r,r,r,r,r,B.hC,r,r,1/0)},

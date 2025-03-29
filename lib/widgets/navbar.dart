@@ -64,7 +64,7 @@ class Navbar extends StatelessWidget {
               ),
               const SizedBox(width: 10),
               Text(
-                'Montasir Opi',
+                'Fahim Montasir Opi',
                 style: TextStyle(
                   color: AppTheme.secondaryColor,
                   fontWeight: FontWeight.bold,
