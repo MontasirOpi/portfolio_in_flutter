@@ -1277,7 +1277,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   void _downloadResume() {
     final anchor = html.AnchorElement(
-      href: 'assets/cv/fahim montasir opi .pdf',
+      href: 'assets/cv/fahim%20montasir%20opi%20.pdf',
     );
     anchor.download = 'Fahim_Montasir_Opi_Resume.pdf';
     anchor.click();
