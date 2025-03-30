@@ -66,7 +66,7 @@ class Navbar extends StatelessWidget {
                   size: 28,
                 ),
                 onPressed: () {
-                  Scaffold.of(context).openEndDrawer();
+                  Scaffold.of(context).openDrawer();
                 },
               ),
             )
@@ -80,6 +80,12 @@ class Navbar extends StatelessWidget {
   Widget _buildSocialIcons() {
     return Row(
       children: [
+        // Navigation menu items
+        NavbarItem(title: 'Home', onTap: () => onSectionClicked(0)),
+        NavbarItem(title: 'About', onTap: () => onSectionClicked(1)),
+        NavbarItem(title: 'Projects', onTap: () => onSectionClicked(2)),
+        NavbarItem(title: 'Contact', onTap: () => onSectionClicked(3)),
+        const SizedBox(width: 20),
         _buildResumeButton(),
         _buildTechIcon("Flutter", const FlutterLogo(size: 22), "https://flutter.dev"),
         _buildTechIcon("Dart", _buildDartLogo(), "https://dart.dev"),
@@ -96,7 +102,7 @@ class Navbar extends StatelessWidget {
       width: 22,
       decoration: const BoxDecoration(
         shape: BoxShape.circle,
-        color: Color(0xFF0175C2), // Dart blue color
+        color: Color(0xFF0175C2),
       ),
       child: const Center(
         child: Text(
@@ -213,4 +219,4 @@ class NavbarItem extends StatelessWidget {
       ),
     );
   }
-} 
+}
