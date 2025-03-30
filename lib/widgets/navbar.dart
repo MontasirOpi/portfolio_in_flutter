@@ -84,7 +84,7 @@ class Navbar extends StatelessWidget {
                   size: 28,
                 ),
                 onPressed: () {
-                  Scaffold.of(context).openEndDrawer();
+                  Scaffold.of(context).openDrawer();
                 },
               ),
             )

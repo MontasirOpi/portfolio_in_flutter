@@ -105,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           onSectionClicked: _scrollToSection,
         ),
       ),
-      endDrawer: _buildDrawer(context),
+      drawer: _buildDrawer(context),
       body: SingleChildScrollView(
         controller: _scrollController,
         physics: const ClampingScrollPhysics(),
