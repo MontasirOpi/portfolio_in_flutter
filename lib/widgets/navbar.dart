@@ -23,55 +23,37 @@ class Navbar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // Logo and name section
-          Row(
-            children: [
-              // Flutter Logo with animation
-              TweenAnimationBuilder<double>(
-                tween: Tween<double>(begin: 0, end: 1),
-                duration: const Duration(seconds: 1),
-                curve: Curves.elasticOut,
-                builder: (context, value, child) {
-                  return Transform.rotate(
-                    angle: value * 2 * 3.14,
-                    child: child,
-                  );
-                },
-                child: const FlutterLogo(
-                  size: 30,
-                  style: FlutterLogoStyle.markOnly,
-                ),
-              ),
-              const SizedBox(width: 10),
-              // Dart Logo
-              Container(
-                height: 30,
-                width: 30,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Color(0xFF0175C2), // Dart blue color
-                ),
-                child: const Center(
-                  child: Text(
-                    "D",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                    ),
+          // Logo and name section (left side)
+          Expanded(
+            child: Row(
+              children: [
+                // Flutter Logo with animation
+                TweenAnimationBuilder<double>(
+                  tween: Tween<double>(begin: 0, end: 1),
+                  duration: const Duration(seconds: 1),
+                  curve: Curves.elasticOut,
+                  builder: (context, value, child) {
+                    return Transform.rotate(
+                      angle: value * 2 * 3.14,
+                      child: child,
+                    );
+                  },
+                  child: const FlutterLogo(
+                    size: 30,
+                    style: FlutterLogoStyle.markOnly,
                   ),
                 ),
-              ),
-              const SizedBox(width: 10),
-              Text(
-                'Fahim Montasir Opi',
-                style: TextStyle(
-                  color: AppTheme.secondaryColor,
-                  fontWeight: FontWeight.bold,
-                  fontSize: isMobile ? 18 : 22,
+                const SizedBox(width: 10),
+                Text(
+                  'Fahim Montasir Opi',
+                  style: TextStyle(
+                    color: AppTheme.secondaryColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: isMobile ? 18 : 22,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           
           // Right side - either menu button or social icons
@@ -84,7 +66,7 @@ class Navbar extends StatelessWidget {
                   size: 28,
                 ),
                 onPressed: () {
-                  Scaffold.of(context).openDrawer();
+                  Scaffold.of(context).openEndDrawer();
                 },
               ),
             )

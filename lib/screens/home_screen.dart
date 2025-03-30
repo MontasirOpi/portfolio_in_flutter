@@ -100,12 +100,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         backgroundColor: AppTheme.backgroundColor,
         elevation: 0,
         leadingWidth: 0,
-        titleSpacing: 16,
+        automaticallyImplyLeading: false, // This prevents the default leading widget (back button or drawer icon)
+        titleSpacing: 0, // Remove extra padding
         title: Navbar(
           onSectionClicked: _scrollToSection,
         ),
       ),
-      drawer: _buildDrawer(context),
+      endDrawer: _buildDrawer(context),
       body: SingleChildScrollView(
         controller: _scrollController,
         physics: const ClampingScrollPhysics(),
