@@ -173,7 +173,7 @@ class Navbar extends StatelessWidget {
 
   void _downloadResume() {
     final anchor = html.AnchorElement(
-      href: 'assets/cv/fahim montasir opi .pdf',
+      href: 'assets/cv/fahim_montasir_resume.pdf',
     );
     anchor.download = 'Fahim_Montasir_Opi_Resume.pdf';
     anchor.click();

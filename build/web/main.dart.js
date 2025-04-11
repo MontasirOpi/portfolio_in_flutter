@@ -70360,7 +70360,7 @@ r=A.ama(a).z
 if(r==null)r=A.a2(a).aq.z
 if(r==null)r=B.E
 q.vC(A.aw2(null,r,!0,null,new A.acB(this),a,null,s,B.wz,!0,t.z))},
-G2(){var s=A.alp("/assets/cv/fahim montasir opi .pdf")
+G2(){var s=A.alp("assets/cv/fahim_montasir_resume.pdf")
 s.setAttribute("download","Fahim_Montasir_Opi_Resume.pdf")
 s.click()}}
 A.acC.prototype={
@@ -70563,7 +70563,7 @@ A.a2B.prototype={
 $0(){return this.a.oS(this.b)},
 $S:0}
 A.a2A.prototype={
-$0(){var s=A.alp("assets/cv/fahim montasir opi .pdf")
+$0(){var s=A.alp("assets/cv/fahim_montasir_resume.pdf")
 s.download="Fahim_Montasir_Opi_Resume.pdf"
 s.click()
 return null},
