@@ -3,11 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "628b69a6abdeeed6238267184dd286e7",
-"assets/AssetManifest.bin.json": "5c08decf7104a98d939a824aa5b53517",
-"assets/AssetManifest.json": "16b4cadbd3669f2133970460dfdeb28d",
+const RESOURCES = {"assets/AssetManifest.bin": "7aa5fa325ca7cfa342b57bbddde797c5",
+"assets/AssetManifest.bin.json": "7c6cacf434606f8e39c8f9206c29e890",
+"assets/AssetManifest.json": "ee9990485d424227a1b91bc608e3fbe4",
 "assets/assets/cv/fahim%2520montasir%2520opi%2520.pdf": "5ceb913487c702f7827f8817cda01bd5",
-"assets/assets/cv/fahim_montasir_resume.pdf": "5b8e87007f7f57dc2aa52522e05a4648",
 "assets/assets/images/lms.jpg": "b1431bedf9264200e07e54ce348f7d32",
 "assets/assets/images/opi.jpg": "e4fd3a69acf28c1872b05b7c7e527f69",
 "assets/assets/images/README.txt": "753f31cdaa3e35f7afba158e9eb5b96f",
@@ -33,15 +32,16 @@ const RESOURCES = {"assets/AssetManifest.bin": "628b69a6abdeeed6238267184dd286e7
 "canvaskit/skwasm_st.wasm": "56c3973560dfcbf28ce47cebe40f3206",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "76f08d47ff9f5715220992f993002504",
-"flutter_bootstrap.js": "49637ef8536a6160dad436eabb9450a3",
+"flutter_bootstrap.js": "9c385b5cbdd1786243f8cdc0dc902900",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "index.html": "b3a089ab9fe29e08ea852386308c661d",
 "/": "b3a089ab9fe29e08ea852386308c661d",
-"main.dart.js": "9639a16d2e989ed7709161eaf504f3e7",
+"main.dart.js": "a61fa1d4b8876cdd25eac0dd8c818139",
 "manifest.json": "e74af8957b5899dc6da961caee768ec9",
+"resume.pdf": "5b8e87007f7f57dc2aa52522e05a4648",
 "version.json": "009c9e65172e010890f7f65fde438006"};
 // The application shell files that are downloaded before a service worker can
 // start.

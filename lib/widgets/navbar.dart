@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'dart:html' as html;
+
 import '../utils/responsive.dart';
 import '../utils/app_theme.dart';
-import 'dart:html' as html;
 
 class Navbar extends StatelessWidget {
   final Function(int) onSectionClicked;
-  
+
   const Navbar({
     Key? key,
     required this.onSectionClicked,
@@ -16,7 +17,7 @@ class Navbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isMobile = Responsive.isMobile(context);
-    
+
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       width: double.infinity,
@@ -27,7 +28,6 @@ class Navbar extends StatelessWidget {
           Expanded(
             child: Row(
               children: [
-                // Flutter Logo with animation
                 TweenAnimationBuilder<double>(
                   tween: Tween<double>(begin: 0, end: 1),
                   duration: const Duration(seconds: 1),
@@ -55,8 +55,8 @@ class Navbar extends StatelessWidget {
               ],
             ),
           ),
-          
-          // Right side - either menu button or social icons
+
+          // Right side - either menu or icons
           if (isMobile)
             Builder(
               builder: (context) => IconButton(
@@ -80,7 +80,6 @@ class Navbar extends StatelessWidget {
   Widget _buildSocialIcons() {
     return Row(
       children: [
-        // Navigation menu items
         NavbarItem(title: 'Home', onTap: () => onSectionClicked(0)),
         NavbarItem(title: 'About', onTap: () => onSectionClicked(1)),
         NavbarItem(title: 'Projects', onTap: () => onSectionClicked(2)),
@@ -152,7 +151,7 @@ class Navbar extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(right: 16),
       child: ElevatedButton.icon(
-        onPressed: () => _downloadResume(),
+        onPressed: _downloadResume,
         icon: const Icon(Icons.description_outlined, size: 16),
         label: const Text('Resume'),
         style: ElevatedButton.styleFrom(
@@ -173,10 +172,10 @@ class Navbar extends StatelessWidget {
 
   void _downloadResume() {
     final anchor = html.AnchorElement(
-      href: 'assets/cv/fahim_montasir_resume.pdf',
-    );
-    anchor.download = 'Fahim_Montasir_Opi_Resume.pdf';
-    anchor.click();
+      href: 'resume.pdf', // Correct path for Flutter Web (in /web folder)
+    )
+      ..download = 'Fahim_Montasir_Opi_Resume.pdf'
+      ..click();
   }
 
   Future<void> _launchUrl(String url) async {
