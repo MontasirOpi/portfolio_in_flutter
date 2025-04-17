@@ -127,4 +127,4 @@ class ResumeDialog extends StatelessWidget {
       ),
     );
   }
-} 
+}
