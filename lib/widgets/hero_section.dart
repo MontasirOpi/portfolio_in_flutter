@@ -5,14 +5,12 @@ import '../utils/responsive.dart';
 class HeroSection extends StatelessWidget {
   final AnimationController fadeController;
   final void Function(int) onSectionClicked;
-  final void Function(BuildContext) viewResume;
 
   const HeroSection({
-    Key? key,
+    super.key,
     required this.fadeController,
     required this.onSectionClicked,
-    required this.viewResume,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -150,8 +148,8 @@ class HeroSection extends StatelessWidget {
                         onPressed: () => onSectionClicked(2),
                         style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-                          backgroundColor: AppTheme.secondaryColor,
-                          foregroundColor: Colors.white,
+                          backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+                          foregroundColor: const Color.fromARGB(255, 92, 144, 113),
                           textStyle: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
@@ -168,33 +166,6 @@ class HeroSection extends StatelessWidget {
                             Text('Check out my work'),
                             SizedBox(width: 8),
                             Icon(Icons.arrow_forward, size: 18),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(width: 20),
-                      ElevatedButton(
-                        onPressed: () => viewResume(context),
-                        style: ElevatedButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-                          backgroundColor: AppTheme.cardColor,
-                          foregroundColor: AppTheme.secondaryColor,
-                          textStyle: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
-                          ),
-                          elevation: 8,
-                          shadowColor: AppTheme.primaryColor.withOpacity(0.5),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30),
-                            side: BorderSide(color: AppTheme.secondaryColor, width: 2),
-                          ),
-                        ),
-                        child: const Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('View Resume'),
-                            SizedBox(width: 8),
-                            Icon(Icons.description_outlined, size: 18),
                           ],
                         ),
                       ),

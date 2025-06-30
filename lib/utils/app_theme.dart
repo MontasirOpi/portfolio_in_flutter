@@ -14,7 +14,7 @@ class AppTheme {
     scaffoldBackgroundColor: backgroundColor,
     colorScheme: const ColorScheme.dark(
       primary: primaryColor,
-      secondary: secondaryColor,
+      secondary: Color.fromARGB(255, 149, 167, 163),
       background: backgroundColor,
       surface: cardColor,
     ),

@@ -6,9 +6,9 @@ class FooterSection extends StatelessWidget {
   final Function(String) launchUrl;
 
   const FooterSection({
-    Key? key,
+    super.key,
     required this.launchUrl,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -11,9 +11,9 @@ class ProjectsSection extends StatelessWidget {
   final AnimationController projectsController;
 
   const ProjectsSection({
-    Key? key,
+    super.key,
     required this.projectsController,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

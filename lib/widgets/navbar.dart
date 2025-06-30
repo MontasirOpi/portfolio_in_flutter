@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'dart:html' as html;
 
 import '../utils/responsive.dart';
 import '../utils/app_theme.dart';
@@ -10,9 +9,9 @@ class Navbar extends StatelessWidget {
   final Function(int) onSectionClicked;
 
   const Navbar({
-    Key? key,
+    super.key,
     required this.onSectionClicked,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -85,7 +84,6 @@ class Navbar extends StatelessWidget {
         NavbarItem(title: 'Projects', onTap: () => onSectionClicked(2)),
         NavbarItem(title: 'Contact', onTap: () => onSectionClicked(3)),
         const SizedBox(width: 20),
-        _buildResumeButton(),
         _buildTechIcon("Flutter", const FlutterLogo(size: 22), "https://flutter.dev"),
         _buildTechIcon("Dart", _buildDartLogo(), "https://dart.dev"),
         _buildSocialIcon(FontAwesomeIcons.github, 'https://github.com/MontasirOpi'),
@@ -147,37 +145,6 @@ class Navbar extends StatelessWidget {
     );
   }
 
-  Widget _buildResumeButton() {
-    return Container(
-      margin: const EdgeInsets.only(right: 16),
-      child: ElevatedButton.icon(
-        onPressed: _downloadResume,
-        icon: const Icon(Icons.description_outlined, size: 16),
-        label: const Text('Resume'),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: AppTheme.secondaryColor,
-          foregroundColor: Colors.white,
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-          textStyle: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 14,
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-          ),
-        ),
-      ),
-    );
-  }
-
-  void _downloadResume() {
-    final anchor = html.AnchorElement(
-      href: 'resume.pdf', // Correct path for Flutter Web (in /web folder)
-    )
-      ..download = 'Fahim_Montasir_Opi_Resume.pdf'
-      ..click();
-  }
-
   Future<void> _launchUrl(String url) async {
     final Uri uri = Uri.parse(url);
     try {
@@ -193,10 +160,10 @@ class NavbarItem extends StatelessWidget {
   final VoidCallback onTap;
 
   const NavbarItem({
-    Key? key,
+    super.key,
     required this.title,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

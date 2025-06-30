@@ -6,9 +6,9 @@ class AboutSection extends StatelessWidget {
   final AnimationController aboutController;
 
   const AboutSection({
-    Key? key,
+    super.key,
     required this.aboutController,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -7,10 +7,10 @@ class ContactSection extends StatelessWidget {
   final Function() launchEmail;
 
   const ContactSection({
-    Key? key,
+    super.key,
     required this.contactController,
     required this.launchEmail,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

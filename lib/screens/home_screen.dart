@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'dart:html' as html;
 import '../bloc/projects/projects_bloc.dart';
 import '../bloc/projects/projects_event.dart';
 import '../utils/app_theme.dart';
@@ -13,7 +12,6 @@ import '../widgets/about_section.dart';
 import '../widgets/projects_section.dart';
 import '../widgets/contact_section.dart';
 import '../widgets/footer_section.dart';
-import '../widgets/resume_dialog.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -112,7 +110,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             HeroSection(
               fadeController: _fadeController,
               onSectionClicked: _scrollToSection,
-              viewResume: _viewResume,
             ),
             AboutSection(
               aboutController: _aboutController,
@@ -158,26 +155,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             _buildDrawerItem(context, 'About', 1, Icons.person),
             _buildDrawerItem(context, 'Projects', 2, Icons.work),
             _buildDrawerItem(context, 'Contact', 3, Icons.email),
-            const Divider(color: AppTheme.secondaryColor),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-              child: ElevatedButton.icon(
-                onPressed: () {
-                  _downloadResume();
-                  Navigator.pop(context);
-                },
-                icon: const Icon(Icons.file_download),
-                label: const Text('Download Resume'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.secondaryColor,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(vertical: 12),
-                  textStyle: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
             const Divider(color: AppTheme.secondaryColor),
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -266,21 +243,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     } catch (e) {
       debugPrint('Could not launch $url: $e');
     }
-  }
-
-  void _viewResume(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (context) => ResumeDialog(downloadResume: _downloadResume),
-    );
-  }
-
-  void _downloadResume() {
-    final anchor = html.AnchorElement(
-      href: 'resume.pdf',
-    )
-      ..download = 'Fahim_Montasir_Opi_Resume.pdf'
-      ..click();
   }
 } 
 
