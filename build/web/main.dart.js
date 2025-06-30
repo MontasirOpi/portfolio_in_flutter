@@ -70676,8 +70676,8 @@ r=A.am9(a).z
 if(r==null)r=A.a4(a).a1.z
 if(r==null)r=B.E
 p.v9(A.avI(q,q,r,!0,q,new A.acB(this),a,q,q,s,B.wX,!0,t.z))},
-GM(){var s=A.alr("assets/cv/fahim_montasir_resume.pdf")
-s.setAttribute("download","Fahim_Montasir_Opi_Resume.pdf")
+GM(){var s=A.alr("resume.pdf")
+s.download="Fahim_Montasir_Opi_Resume.pdf"
 s.click()}}
 A.acC.prototype={
 $1(a){var s=this.a.c

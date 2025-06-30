@@ -3,12 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'dart:html' as html;
 import '../bloc/projects/projects_bloc.dart';
 import '../bloc/projects/projects_event.dart';
-import '../bloc/projects/projects_state.dart';
 import '../utils/app_theme.dart';
 import '../utils/responsive.dart';
 import '../widgets/navbar.dart';
-import '../widgets/project_card.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../widgets/hero_section.dart';
@@ -280,9 +277,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   void _downloadResume() {
     final anchor = html.AnchorElement(
-      href: 'assets/cv/fahim_montasir_resume.pdf',
-    );
-    anchor.setAttribute('download', 'Fahim_Montasir_Opi_Resume.pdf');
-    anchor.click();
+      href: 'resume.pdf',
+    )
+      ..download = 'Fahim_Montasir_Opi_Resume.pdf'
+      ..click();
   }
 } 
+
+
+
+//hello my name is opi
