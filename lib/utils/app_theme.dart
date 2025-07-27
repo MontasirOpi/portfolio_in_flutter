@@ -15,7 +15,6 @@ class AppTheme {
     colorScheme: const ColorScheme.dark(
       primary: primaryColor,
       secondary: Color.fromARGB(255, 149, 167, 163),
-      background: backgroundColor,
       surface: cardColor,
     ),
     textTheme: GoogleFonts.poppinsTextTheme(

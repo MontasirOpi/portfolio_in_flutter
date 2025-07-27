@@ -283,51 +283,55 @@ class AboutSection extends StatelessWidget {
       ),
     );
   }
+Widget _buildProfileImage() {
+  const double imageSize = 300;
 
-  Widget _buildProfileImage() {
-    return Container(
-      width: 300,
-      height: 300,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(150),
-        border: Border.all(
-          color: AppTheme.secondaryColor,
-          width: 4,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: AppTheme.secondaryColor.withOpacity(0.5),
-            blurRadius: 20,
-            offset: const Offset(0, 10),
-          ),
-        ],
+  return Container(
+    width: imageSize,
+    height: imageSize,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(imageSize / 2),
+      border: Border.all(
+        color: AppTheme.secondaryColor,
+        width: 4,
       ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(150),
-        child: Image.asset(
-          'assets/images/opi.jpg',
-          fit: BoxFit.contain,
-          errorBuilder: (context, error, stackTrace) {
-            debugPrint('Error loading image: $error');
-            return Image.network(
-              'https://images.unsplash.com/photo-1511367461989-f85a21fda167',
-              fit: BoxFit.contain,
-              errorBuilder: (_, __, ___) {
-                return Container(
-                  color: AppTheme.cardColor,
-                  child: const Center(
-                    child: Icon(
-                      Icons.person,
-                      size: 100,
-                      color: AppTheme.secondaryColor,
-                    ),
+      boxShadow: [
+        BoxShadow(
+          color: AppTheme.secondaryColor.withOpacity(0.5),
+          blurRadius: 20,
+          offset: const Offset(0, 10),
+        ),
+      ],
+    ),
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(imageSize / 2),
+      child: Image.asset(
+        'assets/images/opi1.jpg',
+        fit: BoxFit.cover, // <- ✅ CROP to fit circle
+        alignment: Alignment.center, // <- ✅ Center subject of landscape image
+        errorBuilder: (context, error, stackTrace) {
+          debugPrint('Error loading image: $error');
+          return Image.network(
+            'https://images.unsplash.com/photo-1511367461989-f85a21fda167',
+            fit: BoxFit.cover,
+            alignment: Alignment.center,
+            errorBuilder: (_, __, ___) {
+              return Container(
+                color: AppTheme.cardColor,
+                child: const Center(
+                  child: Icon(
+                    Icons.person,
+                    size: 100,
+                    color: AppTheme.secondaryColor,
                   ),
-                );
-              },
-            );
-          },
-        ),
+                ),
+              );
+            },
+          );
+        },
       ),
-    );
-  }
+    ),
+  );
+}
+
 } 

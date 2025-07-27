@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'bloc/projects/projects_bloc.dart';
 import 'repositories/projects_repository.dart';
 import 'screens/home_screen.dart';
