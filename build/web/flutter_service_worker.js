@@ -3,12 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "7aa5fa325ca7cfa342b57bbddde797c5",
-"assets/AssetManifest.bin.json": "7c6cacf434606f8e39c8f9206c29e890",
-"assets/AssetManifest.json": "ee9990485d424227a1b91bc608e3fbe4",
+const RESOURCES = {"assets/AssetManifest.bin": "2edb8ee4791320d5c564cf19efaba76e",
+"assets/AssetManifest.bin.json": "2d26594ec55222d2313f3274d8e5e804",
+"assets/AssetManifest.json": "37731087ff5d30f277b31a7e97d10c43",
 "assets/assets/cv/fahim%2520montasir%2520opi%2520.pdf": "5ceb913487c702f7827f8817cda01bd5",
 "assets/assets/images/lms.jpg": "b1431bedf9264200e07e54ce348f7d32",
 "assets/assets/images/opi.jpg": "e4fd3a69acf28c1872b05b7c7e527f69",
+"assets/assets/images/opi1.jpg": "f65f0f14bdacce27c48cd74b2ecddc19",
 "assets/assets/images/README.txt": "753f31cdaa3e35f7afba158e9eb5b96f",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "4e9bbd4a624254f4de1bd8eabd9e8af2",
@@ -29,14 +30,14 @@ const RESOURCES = {"assets/AssetManifest.bin": "7aa5fa325ca7cfa342b57bbddde797c5
 "canvaskit/skwasm.wasm": "39dd80367a4e71582d234948adc521c0",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "83d881c1dbb6d6bcd6b42e274605b69c",
-"flutter_bootstrap.js": "ea09033fdacfbaf80debfdfdad094d11",
+"flutter_bootstrap.js": "03157cbc73ad58cf97492661132b67be",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "index.html": "b3a089ab9fe29e08ea852386308c661d",
 "/": "b3a089ab9fe29e08ea852386308c661d",
-"main.dart.js": "978fcc35d5ad20148c366d494daeaa06",
+"main.dart.js": "f621e177211399c9b66f3f6ef45294a7",
 "manifest.json": "e74af8957b5899dc6da961caee768ec9",
 "resume.pdf": "5b8e87007f7f57dc2aa52522e05a4648",
 "version.json": "009c9e65172e010890f7f65fde438006"};
